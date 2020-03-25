@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3659057341272334050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3659057341272334052}
+  - component: {fileID: 3659057341272334053}
+  m_Layer: 0
+  m_Name: TeleporterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3659057341272334052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659057341272334050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3659057341272334053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659057341272334050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d511fd59db70c4cda8a27a1eb240a120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleports:
+  - triggerIndex: 9
+    teleportType: 0
+    teleportIndex: 2
+  - triggerIndex: 4
+    teleportType: 1
+    teleportIndex: 18
+  - triggerIndex: 16
+    teleportType: 1
+    teleportIndex: 22
+  - triggerIndex: 15
+    teleportType: 0
+    teleportIndex: 1
+  - triggerIndex: 21
+    teleportType: 1
+    teleportIndex: 32
+  - triggerIndex: 24
+    teleportType: 0
+    teleportIndex: 14
+  - triggerIndex: 27
+    teleportType: 0
+    teleportIndex: 23
+  - triggerIndex: 29
+    teleportType: 0
+    teleportIndex: 19
+  ladderColor: {fileID: 2100000, guid: 7f70d554e756a4c25ae985ee76b049f4, type: 2}
+  snakeColor: {fileID: 2100000, guid: 70d42e9cb9b3544e08a05107fe031e6a, type: 2}
