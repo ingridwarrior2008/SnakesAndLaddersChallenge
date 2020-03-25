@@ -41,20 +41,26 @@ public class BoardView : MonoBehaviour
         }
     }
 
+    private SpriteRenderer spriteRenderer
+    {
+        get
+        {
+            return this.GetComponent<SpriteRenderer>();
+        }
+    }
+
     void Start()
     {
-        //TODO: Refactor!
-        this.name = "BoardView" + boardModel.BoardNumber;
+        this.name = GameConstants.BoardViewText + boardModel.BoardNumber;
         numberText.text = boardModel.BoardNumber + "";
 
         if (boardModel.Index % 2 == 0)
         {
-            GetComponent<SpriteRenderer>().color = Color.blue;
+            spriteRenderer.color = Color.blue;
         }
 
-        GetComponent<SpriteRenderer>().sortingOrder = 0;
-        GetComponent<SpriteRenderer>().sortingLayerName = "Board";
-
+        spriteRenderer.sortingOrder = 0;
+        spriteRenderer.sortingLayerName = GameConstants.BoardSortingLayerName;
     }
 
     public void SetBoardModel(BoardModel board)

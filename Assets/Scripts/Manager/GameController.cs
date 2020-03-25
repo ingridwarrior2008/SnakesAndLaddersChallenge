@@ -9,32 +9,15 @@ public class GameController : MonoBehaviour
     #region Properties
     public enum GameState { Start, Pause, Playing };
 
-    [SerializeField]
-    private GameObject gameModeMenu;
-
-    [SerializeField]
-    private GameObject winPanel;
-
-    [SerializeField]
-    private Text playerTurnText;
-
-    [SerializeField]
-    private Text diceText;
-
-    [SerializeField]
-    private Text winText;
-
-    [SerializeField]
-    private Button rollButton;
-
-    [SerializeField]
-    private Text pauseAndPlayText;
-
-    [SerializeField]
-    private PlayerController playerControllerPrefab;
-
-    [SerializeField]
-    private PlayerController botControllerPrefab;
+    public GameObject gameModeMenu;
+    public GameObject winPanel;
+    public Text playerTurnText;
+    public Text diceText;
+    public Text winText;
+    public Button rollButton;
+    public Text pauseAndPlayText;
+    public PlayerController playerControllerPrefab;
+    public PlayerController botControllerPrefab;
 
     private PlayerController player;
     private UIBoardManager boardManager;

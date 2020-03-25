@@ -7,4 +7,7 @@
     public const string GameTurnText = "Turn: ";
     public const string GamePauseText = "Pause";
     public const string GamePlayText = "Play";
+    public const string BoardViewText = "BoardView";
+    public const string BoardSortingLayerName = "Board";
+    public const string LinesSortingLayerName = "Lines";
 }

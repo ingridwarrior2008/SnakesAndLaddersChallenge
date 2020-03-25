@@ -15,11 +15,9 @@ public class TeleporterManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private Material ladderColor;
-
-    [SerializeField]
-    private Material snakeColor;
+    
+    public Material ladderColor;
+    public Material snakeColor;
 
     private TeleportLineRender teleportLineRender;
     #endregion

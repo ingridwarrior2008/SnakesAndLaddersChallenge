@@ -26,11 +26,8 @@ public class UIBoardManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private BoardView boardViewPrefab;
-
-    [SerializeField]
-    private TeleporterManager teleporterManagerPrefab;
+    public BoardView boardViewPrefab;
+    public TeleporterManager teleporterManagerPrefab;
 
     private TeleporterManager teleporterManager;
 

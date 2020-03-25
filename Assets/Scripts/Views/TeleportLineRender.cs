@@ -34,7 +34,6 @@ public class TeleportLineRender
 
     private void CreateTeleportLines(Vector2 startPoint, Vector2 finalPoint, TeleportModel.TeleportType teleportType)
     {
-        //TODO Refactor
         GameObject lineObject = new GameObject("TeleportFromLine: ");
         LineRenderer lineRenderer = lineObject.AddComponent<LineRenderer>();
         lineRenderer.material = teleportType == TeleportModel.TeleportType.Ladder ? ladderColor : snakeColor;
@@ -44,6 +43,6 @@ public class TeleportLineRender
         lineRenderer.startWidth = 0.1f;
         lineRenderer.endWidth = 0.1f;
         lineRenderer.sortingOrder = 0;
-        lineRenderer.sortingLayerName = "Lines";
+        lineRenderer.sortingLayerName = GameConstants.LinesSortingLayerName;
     }
 }

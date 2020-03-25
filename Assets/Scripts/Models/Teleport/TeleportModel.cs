@@ -9,7 +9,7 @@ public class TeleportModel
     public enum TeleportType { Snake, Ladder }
 
     [SerializeField]
-    private int triggerIndex;
+    private int triggerIndex = 0;
     public int TriggerIndex
     {
         get
@@ -19,7 +19,7 @@ public class TeleportModel
     }
 
     [SerializeField]
-    private TeleportType teleportType;
+    private TeleportType teleportType = TeleportType.Snake;
     public TeleportType GetTeleportType
     {
         get
@@ -29,7 +29,7 @@ public class TeleportModel
     }
 
     [SerializeField]
-    private int teleportIndex;
+    private int teleportIndex = 0;
     public int TeleportIndex
     {
         get
